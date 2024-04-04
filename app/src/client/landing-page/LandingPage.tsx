@@ -153,7 +153,7 @@ export default function LandingPage() {
             <div className='mx-auto max-w-8xl px-6 lg:px-8'>
               <div className='lg:mb-18 mx-auto max-w-3xl text-center'>
                 <h1 className='text-4xl font-bold text-gray-900 sm:text-6xl dark:text-white'>
-                  Invest in <span className='italic'>Stocks, derivatives1, Gold/Silver/oil and more</span>
+                  Invest in <span className='italic'>Stocks, derivatives, Gold/Silver/oil and more</span>
                 </h1>
                 <p className='mt-6 mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-white'>
                 {/* With some more exciting words about your product! */}
