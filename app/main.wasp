@@ -2,7 +2,7 @@ app OpenSaaS {
   wasp: {
     version: "^0.13.0"
   },
-  title: "My Open SaaS App",
+  title: "InvestBegin",
   head: [
         "<meta property='og:type' content='website' />",
         "<meta property='og:title' content='My Open SaaS App' />",
