@@ -6,8 +6,8 @@ app OpenSaaS {
   head: [
         "<meta property='og:type' content='website' />",
         "<meta property='og:title' content='investBegin' />",
-        "<meta property='og:url' content='https://opensaas.sh' />", 
-        "<meta property='og:description' content='I made a SaaS App. Buy my stuff.' />",
+        "<meta property='og:url' content='http://investbegin.de' />", 
+        "<meta property='og:description' content='Investieren in Aktien, Börse und Online Geld (Invest in Stocks, derivitavies and online money)' />",
         "<meta property='og:image' content='https://opensaas.sh/public-banner.png' />",
         "<meta name='twitter:image' content='https://opensaas.sh/public-banner.png' />", 
         "<meta name='twitter:image:width' content='800' />",
@@ -84,7 +84,7 @@ entity User {=psl
   username                  String?         @unique
   createdAt                 DateTime        @default(now())
   lastActiveTimestamp       DateTime        @default(now())
-  isAdmin                   Boolean         @default(false)
+  isAdmin                   Boolean         @default(true)
   stripeId                  String? 
   checkoutSessionId         String?
   hasPaid                   Boolean         @default(false)
