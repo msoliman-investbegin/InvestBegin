@@ -11,25 +11,25 @@ export const navigation = [
 export const features = [
   {
     name: 'Cool Feature #1',
-    description: 'Describe your cool feature here.',
+    description: 'Konstenlose Beratung (no fees at all)',
     icon: '🤝',
     href: DOCS_URL,
   },
   {
     name: 'Cool Feature #2',
-    description: 'Describe your cool feature here.',
+    description: 'Datenschutz (Deine Datei sind verschlüselt gespeichert)',
     icon: '🔐',
     href: DOCS_URL,
   },
   {
     name: 'Cool Feature #3',
-    description: 'Describe your cool feature here.',
+    description: '24/7 kundenberatung (all-time available support)',
     icon: '🥞',
     href: DOCS_URL,
   },
   {
     name: 'Cool Feature #4',
-    description: 'Describe your cool feature here.',
+    description: 'Mehrsprachig (Supports Deutsch, English and more)',
     icon: '💸',
     href: DOCS_URL,
   },

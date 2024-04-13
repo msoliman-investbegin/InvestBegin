@@ -5,7 +5,7 @@ app OpenSaaS {
   title: "InvestBegin",
   head: [
         "<meta property='og:type' content='website' />",
-        "<meta property='og:title' content='My Open SaaS App' />",
+        "<meta property='og:title' content='investBegin' />",
         "<meta property='og:url' content='https://opensaas.sh' />", 
         "<meta property='og:description' content='I made a SaaS App. Buy my stuff.' />",
         "<meta property='og:image' content='https://opensaas.sh/public-banner.png' />",
@@ -18,7 +18,7 @@ app OpenSaaS {
         // plausible has script extension `script.local.js` for local development
         "<script defer data-domain='<your-site-id>' src='https://plausible.io/js/script.local.js'></script>",
         // google analytics only needs one script and will automatically detect if you are in dev mode 
-        "<!-- Google tag (gtag.js) --><script>...</script>"
+        "<!-- Google tag (gtag.js) --><script async src='https://www.googletagmanager.com/gtag/js?id=G-LV6X0XTRX3'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-LV6X0XTRX3');</script>"
   ],
   // 🔐 Auth out of the box! https://wasp-lang.dev/docs/auth/overview
   auth: {
