@@ -29,35 +29,10 @@ const ConsentBanner = () => {
 
   return (
     <div
-      className={`bg-pink-100  fixed bottom-0 left-0 w-full bg-white p-5 shadow-md z-50 font-sans text-center ${
-        consentGiven ? 'hidden' : ''
-      } max-sm:top-0 max-sm:bottom-0 max-sm:h-full max-sm:overflow-auto max-sm:pt-10 max-sm:pb-5`}
+      className={`bg-pink-100 fixed bottom-0 left-0 w-full p-5 shadow-md z-50 font-sans text-center max-sm:top-0 max-sm:bottom-0 max-sm:h-full max-sm:overflow-auto max-sm:pt-10 max-sm:pb-5`}
     >
       <img src={logo} alt='Logo' className='max-w-[50px] mb-3 mx-auto' />
-      <h2 className='text-xl mb-2 font-bold'>www.investbegin.de asks for your consent to use your personal data to:</h2>
-      <ul className='list-none p-0 mb-3'>
-        <li className='flex items-center mb-2'>
-          <div
-            className='w-6 h-6 mr-2 bg-no-repeat bg-contain'
-            style={{ backgroundImage: `url('user-icon.png')` }}
-          ></div>
-          <p>Personalised ads and content, ad and content measurement, audience insights and product development</p>
-        </li>
-        <li className='flex items-center mb-2'>
-          <div
-            className='w-6 h-6 mr-2 bg-no-repeat bg-contain'
-            style={{ backgroundImage: `url('storage-icon.png')` }}
-          ></div>
-          <p>Store and/or access information on a device</p>
-        </li>
-        <li className='flex items-center mb-2'>
-          <div
-            className='w-6 h-6 mr-2 bg-no-repeat bg-contain'
-            style={{ backgroundImage: `url('learn-more-icon.png')` }}
-          ></div>
-          <p>Learn more</p>
-        </li>
-      </ul>
+      <h2 className='text-xl mb-2 font-bold'>www.investbegin.de asks for your consent to use your personal data</h2>
       <p className='text-sm mb-3 text-gray-700'>
         Your personal data will be processed and information from your device (cookies, unique identifiers, and other
         device data) may be stored by, accessed by and shared with third party vendors or used specifically by this site
