@@ -8,6 +8,7 @@ export enum TierIds {
 
 export const DOCS_URL = 'https://docs.opensaas.sh';
 export const BLOG_URL = 'https://docs.opensaas.sh/blog';
+export const Vantage_Affiliate_url = 'https://fwd.cx/2MMHPSDreRbg';
 
 const isDevEnv = process.env.NODE_ENV !== 'production';
 const customerPortalTestUrl = '<your-url-here>'; // TODO: find your test url at https://dashboard.stripe.com/test/settings/billing/portal
