@@ -4,6 +4,8 @@ import './Main.css';
 import AppNavBar from './components/AppNavBar';
 import { useMemo, useEffect, ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
+import ConsentBanner from './components/ConsentBanner';
+import { getCookie } from './utils/cookie';
 
 /**
  * use this component to wrap all child components
@@ -12,6 +14,7 @@ import { useLocation } from 'react-router-dom';
 export default function App({ children }: { children: ReactNode }) {
   const location = useLocation();
   const { data: user } = useAuth();
+  const showConsent = getCookie('consent');
 
   const shouldDisplayAppNavBar = useMemo(() => {
     return location.pathname !== '/' && location.pathname !== '/login' && location.pathname !== '/signup';
@@ -53,6 +56,11 @@ export default function App({ children }: { children: ReactNode }) {
           </>
         )}
       </div>
+
+      {
+        showConsent ||
+        <ConsentBanner />
+      }
     </>
   );
 }
