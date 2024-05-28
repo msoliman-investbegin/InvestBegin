@@ -1,4 +1,4 @@
-import { DOCS_URL, BLOG_URL } from '../../shared/constants';
+import { DOCS_URL, BLOG_URL, YouTube_InvestBegin, FB_InvestBegin } from '../../shared/constants';
 import daBoiAvatar from '../static/da-boi.png';
 import avatarPlaceholder from '../static/avatar-placeholder.png';
 
@@ -61,9 +61,9 @@ export const testimonials = [
 export const faqs = [
   {
     id: 1,
-    question: 'Whats the meaning of life?',
-    answer: '42.',
-    href: 'https://en.wikipedia.org/wiki/42_(number)',
+    question: 'What are Stocks and how to make online money?',
+    answer: '1.',
+    href: 'https://www.investopedia.com/terms/s/stock.asp',
   },
 ];
 export const footerNavigation = {
@@ -72,8 +72,8 @@ export const footerNavigation = {
     { name: 'Blog', href: BLOG_URL },
   ],
   company: [
-    { name: 'About', href: 'https://wasp-lang.dev' },
-    { name: 'Privacy', href: '#' },
+    { name: 'Watch us on Youtube', href: YouTube_InvestBegin },
+    { name: 'Follow us on FaceBook', href: FB_InvestBegin },
     { name: 'Terms of Service', href: '#' },
   ],
 };
