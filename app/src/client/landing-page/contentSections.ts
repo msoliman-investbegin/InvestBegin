@@ -7,7 +7,8 @@ export const navigation = [
   { name: 'Features', href: '#features' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Documentation', href: DOCS_URL },
-  { name: 'Blog', href: BLOG_URL },
+  { name: 'Blog', href: '/blogs' },
+  // { name: 'Blog', href: BLOG_URL },
 ];
 export const features = [
   {
@@ -70,7 +71,8 @@ export const faqs = [
 export const footerNavigation = {
   app: [
     { name: 'Documentation', href: DOCS_URL },
-    { name: 'Blog', href: BLOG_URL },
+    { name: 'Blog', href: '/blogs' },
+    // { name: 'Blog', href: BLOG_URL },
   ],
   company: [
     { name: 'Watch us on Youtube', href: YouTube_InvestBegin, icon: FaYoutube },
