@@ -1,6 +1,7 @@
 import { DOCS_URL, BLOG_URL, YouTube_InvestBegin, FB_InvestBegin } from '../../shared/constants';
 import daBoiAvatar from '../static/da-boi.png';
 import avatarPlaceholder from '../static/avatar-placeholder.png';
+import { FaYoutube, FaFacebook, FaFileAlt } from 'react-icons/fa'; // Import necessary icons
 
 export const navigation = [
   { name: 'Features', href: '#features' },
@@ -72,8 +73,8 @@ export const footerNavigation = {
     { name: 'Blog', href: BLOG_URL },
   ],
   company: [
-    { name: 'Watch us on Youtube', href: YouTube_InvestBegin },
-    { name: 'Follow us on FaceBook', href: FB_InvestBegin },
-    { name: 'Terms of Service', href: '#' },
+    { name: 'Watch us on Youtube', href: YouTube_InvestBegin, icon: FaYoutube },
+    { name: 'Follow us on FaceBook', href: FB_InvestBegin, icon: FaFacebook },
+    { name: 'Terms of Service', href: '#', icon: FaFileAlt },
   ],
 };
