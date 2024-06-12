@@ -58,7 +58,7 @@ export default function App({ children }: { children: ReactNode }) {
       </div>
 
       {
-        showConsent ||
+        showConsent &&
         <ConsentBanner />
       }
     </>

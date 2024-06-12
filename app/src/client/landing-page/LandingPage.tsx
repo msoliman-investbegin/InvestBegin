@@ -21,6 +21,9 @@ export default function LandingPage() {
 
   const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
 
+  console.log('isUserLoading:', isUserLoading, 'user:', user)
+
+
   return (
     <div className='bg-white dark:text-white dark:bg-boxdark-2'>
       {/* Header */}
@@ -62,6 +65,7 @@ export default function LandingPage() {
               <ul className='flex justify-center items-center gap-2 2xsm:gap-4'>
                 <DarkModeSwitcher />
               </ul>
+
               {isUserLoading ? null : !user ? (
                 <Link to='/login'>
                   <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
@@ -358,11 +362,12 @@ export default function LandingPage() {
               <h3 className='text-sm font-semibold leading-6 text-gray-900 dark:text-white'>Company</h3>
               <ul role='list' className='mt-6 space-y-4'>
                 {footerNavigation.company.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className='text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-white'>
-                      {item.name}
-                    </a>
-                  </li>
+                  <li key={item.name} className='flex items-center'>
+                  <item.icon className='mr-2 text-gray-600 hover:text-gray-900 dark:text-white' size='1.2em' />
+                  <a href={item.href} className='text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-white'>
+                    {item.name}
+                  </a>
+                </li>
                 ))}
               </ul>
             </div>
