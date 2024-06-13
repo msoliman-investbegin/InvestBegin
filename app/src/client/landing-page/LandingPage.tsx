@@ -21,6 +21,9 @@ export default function LandingPage() {
 
   const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
 
+  const isUserSuccess = (isUserLoading && user) ? true : false
+
+
   return (
     <div className='bg-white dark:text-white dark:bg-boxdark-2'>
       {/* Header */}
@@ -62,14 +65,15 @@ export default function LandingPage() {
               <ul className='flex justify-center items-center gap-2 2xsm:gap-4'>
                 <DarkModeSwitcher />
               </ul>
-              {isUserLoading ? null : !user ? (
-                <Link to='/login'>
+
+              {!isUserSuccess ? (
+                <Link to='/login' className='text-sm font-semibold'>
                   <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                     Log in <BiLogIn size='1.1rem' className='ml-1' />
                   </div>
                 </Link>
               ) : (
-                <DropdownUser user={user} />
+                <DropdownUser user={user!} />
               )}
             </div>
           </div>
@@ -106,14 +110,14 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div className='py-6'>
-                  {isUserLoading ? null : !user ? (
-                    <Link to='/login'>
-                      <div className='flex justify-start items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
+                  {!isUserSuccess ? (
+                    <Link to='/login' className='text-sm font-semibold'>
+                      <div className='flex items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                         Log in <BiLogIn size='1.1rem' className='ml-1' />
                       </div>
                     </Link>
                   ) : (
-                    <UserMenuItems user={user} />
+                    <UserMenuItems user={user!} />
                   )}
                 </div>
                 <div className='py-6'>
@@ -358,11 +362,12 @@ export default function LandingPage() {
               <h3 className='text-sm font-semibold leading-6 text-gray-900 dark:text-white'>Company</h3>
               <ul role='list' className='mt-6 space-y-4'>
                 {footerNavigation.company.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className='text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-white'>
-                      {item.name}
-                    </a>
-                  </li>
+                  <li key={item.name} className='flex items-center'>
+                  <item.icon className='mr-2 text-gray-600 hover:text-gray-900 dark:text-white' size='1.2em' />
+                  <a href={item.href} className='text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-white'>
+                    {item.name}
+                  </a>
+                </li>
                 ))}
               </ul>
             </div>

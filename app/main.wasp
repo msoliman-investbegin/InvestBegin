@@ -218,6 +218,11 @@ page PricingPage {
   component: import PricingPage from "@src/client/app/PricingPage"
 }
 
+route BlogsPageRoute { path: "/blogs", to: BlogsPage }
+page BlogsPage {
+  component: import BlogsPage from "@src/client/app/BlogsPage"
+}
+
 route AccountRoute { path: "/account", to: AccountPage }
 page AccountPage {
   authRequired: true,

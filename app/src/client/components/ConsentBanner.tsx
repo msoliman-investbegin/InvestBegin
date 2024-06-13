@@ -24,8 +24,14 @@ const ConsentBanner = () => {
   };
 
   const handleDecline = () => {
+    setConsentGiven(true);
     setCookie('consent', 'false', 365); // Set consent cookie for 1 year
   };
+
+  // Only render the banner if consent has not been given
+  if (consentGiven) {
+    return null;
+  }
 
   return (
     <div
