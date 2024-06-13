@@ -21,7 +21,7 @@ export default function LandingPage() {
 
   const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
 
-  console.log('isUserLoading:', isUserLoading, 'user:', user)
+  const isUserSuccess = (isUserLoading && user) ? true : false
 
 
   return (
@@ -66,14 +66,14 @@ export default function LandingPage() {
                 <DarkModeSwitcher />
               </ul>
 
-              {isUserLoading ? null : !user ? (
-                <Link to='/login'>
+              {!isUserSuccess ? (
+                <Link to='/login' className='text-sm font-semibold'>
                   <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                     Log in <BiLogIn size='1.1rem' className='ml-1' />
                   </div>
                 </Link>
               ) : (
-                <DropdownUser user={user} />
+                <DropdownUser user={user!} />
               )}
             </div>
           </div>
@@ -110,14 +110,14 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div className='py-6'>
-                  {isUserLoading ? null : !user ? (
-                    <Link to='/login'>
-                      <div className='flex justify-start items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
+                  {!isUserSuccess ? (
+                    <Link to='/login' className='text-sm font-semibold'>
+                      <div className='flex items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                         Log in <BiLogIn size='1.1rem' className='ml-1' />
                       </div>
                     </Link>
                   ) : (
-                    <UserMenuItems user={user} />
+                    <UserMenuItems user={user!} />
                   )}
                 </div>
                 <div className='py-6'>

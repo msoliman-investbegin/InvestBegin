@@ -26,6 +26,8 @@ export default function AppNavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { data: user, isLoading: isUserLoading } = useAuth();
+  const isUserSuccess = (isUserLoading && user) ? true : false
+
   return (
     <header className='absolute inset-x-0 top-0 z-50 shadow sticky bg-white bg-opacity-50 backdrop-blur-lg backdrop-filter dark:border dark:border-gray-100/10 dark:bg-boxdark-2'>
       <nav className='flex items-center justify-between p-6 lg:px-8' aria-label='Global'>
@@ -60,7 +62,7 @@ export default function AppNavBar() {
             <DarkModeSwitcher />
           </ul>
 
-          {isUserLoading ? null : !user ? (
+          {!isUserSuccess ? (
             <a href={!user ? '/login' : '/account'} className='text-sm font-semibold leading-6 ml-4'>
               <div className='flex items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                 Log in <BiLogIn size='1.1rem' className='ml-1 mt-[0.1rem]' />
@@ -68,7 +70,7 @@ export default function AppNavBar() {
             </a>
           ) : (
             <div className='ml-4'>
-              <DropdownUser user={user} />
+              <DropdownUser user={user!} />
             </div>
           )}
         </div>
@@ -105,14 +107,14 @@ export default function AppNavBar() {
                 ))}
               </div>
               <div className='py-6'>
-                {isUserLoading ? null : !user ? (
+                {!isUserSuccess ? (
                   <Link to='/login'>
                     <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
                       Log in <BiLogIn size='1.1rem' className='ml-1' />
                     </div>
                   </Link>
                 ) : (
-                  <UserMenuItems user={user} setMobileMenuOpen={setMobileMenuOpen} />
+                  <UserMenuItems user={user!} setMobileMenuOpen={setMobileMenuOpen} />
                 )}
               </div>
               <div className='py-6'>
