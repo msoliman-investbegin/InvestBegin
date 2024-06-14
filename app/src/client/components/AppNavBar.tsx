@@ -10,8 +10,7 @@ import DropdownUser from './DropdownUser';
 import { DOCS_URL, BLOG_URL } from '../../shared/constants';
 import DarkModeSwitcher from '../admin/components/DarkModeSwitcher';
 import { UserMenuItems } from '../components/UserMenuItems';
-
-const navigation = [
+const navigation: any = [
   { name: 'AI Scheduler (Demo App)', href: '/demo-app' },
   { name: 'File Upload (AWS S3)', href: '/file-upload' },
   { name: 'Pricing', href: '/pricing' },
@@ -47,14 +46,14 @@ export default function AppNavBar() {
           </button>
         </div>
         <div className='hidden lg:flex lg:gap-x-12'>
-          {navigation.map((item) => (
-            <a
+          {navigation.map((item: any) => (
+            <Link
               key={item.name}
-              href={item.href}
+              to={item.href}
               className='text-sm font-semibold leading-6 text-gray-900 duration-300 ease-in-out hover:text-yellow-500 dark:text-white'
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className='hidden lg:flex lg:flex-1 gap-3 justify-end items-center'>
@@ -95,15 +94,15 @@ export default function AppNavBar() {
           <div className='mt-6 flow-root'>
             <div className='-my-6 divide-y divide-gray-500/10'>
               <div className='space-y-2 py-6'>
-                {navigation.map((item) => (
-                  <a
+                {navigation.map((item: any) => (
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white hover:dark:bg-boxdark-2'
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className='py-6'>
