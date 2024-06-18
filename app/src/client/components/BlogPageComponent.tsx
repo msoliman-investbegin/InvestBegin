@@ -5,21 +5,20 @@ const BlogPageComponent = () => {
   const blogs: any = [
     {
       id: 1,
-      title: 'Blog Title 1',
-      author: 'Author 1',
+      title: 'Forex Trading meistern: Ein Leitfaden für EUR/USD, eToro Demo und Plus500 WebTrader',
+      author: '',
       date: 'June 10, 2024',
-      image: 'https://placehold.co/700x400/000000/FFFFFF/png', // Sample image URL
-      content: `Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      image: 'https://academy.education.investing.com/wp-content/uploads/2023/04/plus-500.jpg', // Sample image URL
+      content: `Der Online-Devisenhandel ist sowohl für Anfänger als auch für erfahrene Händler immer zugänglicher geworden. Das Währungspaar EUR/USD ist aufgrund seiner Liquidität und seines Gewinnpotenzials eine der beliebtesten Optionen auf dem Devisenmarkt. Bevor Sie jedoch einsteigen, ist es wichtig, die Ihnen zur Verfügung stehenden Tools wie eToro Demo und Plus500 WebTrader zu verstehen.
+
+      eToro, eine bekannte Plattform für Deviseninvestitionen, bietet ein Demokonto, mit dem Sie den Handel üben können, ohne echtes Geld zu riskieren. Dieses wertvolle Instrument hilft Anfängern, Vertrauen aufzubauen und die Besonderheiten des Forex-Marktes zu verstehen.
       
+      Ein weiterer Top-Anwärter in der Welt des Internethandels ist Plus500 WebTrader. Seine benutzerfreundliche Oberfläche und seine robusten Funktionen machen ihn zu einer ausgezeichneten Wahl sowohl für Anfänger als auch für fortgeschrittene Trader. Mit dieser Plattform können Sie problemlos auf EUR/USD und andere Forex-Paare zugreifen.
       
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      Wer in Devisen investieren will, muss die Kunst der Analyse und des Risikomanagements beherrschen. Die Kombination aus  Verstehen von Devisen wie EUR/USD, eToro Demo und Plus500 WebTrader kann Ihre Forex-Reise grundlegend verändern. Beginnen Sie damit, Ihre Fähigkeiten auf einem Demokonto zu verfeinern, lernen Sie die Dynamik des EUR/USD-Paares kennen und nutzen Sie die benutzerfreundlichen Web-Handelsplattformen, um Ihren Handelserfolg zu steigern.
       
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-      
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.`,
+      Zusammenfassend lässt sich sagen, dass der Online-Devisenhandel ein spannendes und potenziell lukratives Unterfangen ist. Egal, ob Sie ein erfahrener Händler oder ein Anfänger sind, eToro und Plus500 WebTrader bieten die idealen Werkzeuge, um die Welt des Devisenhandels zu erkunden und das EUR/USD-Paar zu meistern.
+      `,
     },
     {
       id: 2,
