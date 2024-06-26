@@ -172,6 +172,8 @@ export default function LandingPage() {
                   </a>
                 </div>
               </div>
+              {/* Youtube intro video */}
+              <iframe width="1200" height="600" src="https://www.youtube.com/embed/o0Pu287F_mU?si=Kh101xyY5KV7VaE0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               <div className='mt-14 flow-root sm:mt-14 '>
                 <div className='-m-2 rounded-xl  lg:-m-4 lg:rounded-2xl lg:p-4'>
                   <img
